@@ -37,6 +37,14 @@ const resolvers = {
       }
     },
   },
+
+  Mutation: {
+    createReview: (_, { ep, review }) => ({
+      stars: review.stars,
+      commentary: review.commentary,
+      episode: ep,
+    }),
+  },
 };
 
 module.exports = resolvers;

@@ -15,6 +15,21 @@ const typeDefs = gql`
     name: String
     height(unit: String): Float
   }
+
+  type Mutation {
+    createReview(ep: String!, review: ReviewInput!): Review
+  }
+
+  type Review {
+    stars: Int
+    commentary: String
+    episode: String
+  }
+
+  input ReviewInput {
+    stars: Int
+    commentary: String
+  }
 `;
 
 module.exports = typeDefs;
