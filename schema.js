@@ -13,7 +13,19 @@ const typeDefs = gql`
   type HumanResponse {
     id: String
     name: String
+    appearsIn: [Episode]
     height(unit: String): Float
+    starships: [Starship]
+  }
+
+  enum Episode {
+    NEWWHOPE
+    EMPIRE
+    JEDI
+  }
+
+  type Starship {
+    name: String
   }
 
   type Mutation {

@@ -12,6 +12,14 @@ const resolvers = {
             { unit: "FOOT", value: 6.8 },
             { unit: "INCH", value: 1.1 },
           ],
+          starships: [
+            {
+              name: "Millenium Falcon",
+            },
+            {
+              name: "Imperial shuttle",
+            },
+          ],
         },
         {
           id: "2000",
@@ -19,6 +27,14 @@ const resolvers = {
           height: [
             { unit: "FOOT", value: 5.5 },
             { unit: "INCH", value: 1.5 },
+          ],
+          starships: [
+            {
+              name: "Millenium",
+            },
+            {
+              name: "Shuttle",
+            },
           ],
         },
       ];
